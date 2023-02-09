@@ -1,7 +1,31 @@
-import React from 'react'
+import React , {useState} from 'react'
 import {MdPlace} from 'react-icons/md'
 import Anelka from '../assets/anelka-shoot.jpg'
-function Header() {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+import CV from '../document/cv-Anelka.pdf'
+function Header() {   
+  
+  const [loading, setLoading] = useState(false);
+
+  const handleDownload = async () => {
+    setLoading(true);
+
+    try {
+      const response = await fetch(CV);
+      const blob = await response.blob();
+
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "document.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <div className='flex justify-center h-screen bg-[#ede9fe] '>
       
@@ -20,7 +44,11 @@ function Header() {
   Ambohimandamina , Mahajanga</a>
 </div>
 <div>
-  <button className='text-white font-bold bg-[#5b21b6] mt-5 py-3 px-7 rounded-xl ml-4 '>Donwload CV</button>
+  <button className='text-white font-bold bg-[#5b21b6] mt-5 py-3 px-7 rounded-xl ml-4 '
+  onClick={handleDownload} disabled={loading}
+  >
+    {loading ? "Downloading..." : "Download CV"}
+  </button>
 </div>
 </div>
       </div>
