@@ -1,45 +1,43 @@
 import React from 'react'
 import {FaFacebook} from 'react-icons/fa'
 import {BsInstagram} from 'react-icons/bs'
-import {BsWhatsapp} from 'react-icons/bs'
+import {BsTwitter} from 'react-icons/bs'
 import {AiOutlineMail} from 'react-icons/ai'
 import {FiPhoneCall} from 'react-icons/fi'
 function Contact() {
   return (
-    <div className='h-screen w-full '>
-       
-        
-          <div>
-          <div className='ml-32 mt-24'>
-      <a href="https://www.facebook.com/leader.poseidon/" className=' text-3xl font-bold flex flex-row text-blue-500 hover:underline '><FaFacebook className=' text-4xl   mr-5'/>
-      Facebook</a>
-      </div>  
-        <div className='ml-32 mt-5'>
-        <a href="https://www.instagram.com/dongaanelka/" className='hover:underline text-3xl font-bold flex flex-row bg-clip-text text-pink-500 bg-gradient-to-r from-pink-500 to-violet-500 '><BsInstagram className=' text-4xl  mr-5 '/>
-        Instagram
-        </a>
+    <div className='h-screen w-full bg-[#e4e4e7] p-14 flex flex-row '>
+       <div className='shadow-2xl w-80 h-96  ml-28 bg-white rounded-xl  '>
+        <h1 className='text-3xl font-bold py-8 ml-12 '>Contact me</h1>
+        <div>
+          <a href="#" className='flex flex-row ml-5 text-2xl font-bold mt-10'><FiPhoneCall className='mr-5 font-bold'></FiPhoneCall> +261325739058</a>
         </div>
-        <div className='ml-32 mt-5'>
-        <a href="#" className=' text-green-500 text-3xl font-bold flex flex-row '><BsWhatsapp className=' text-4xl  mr-5'/>
-        +261 32 57 390 58
-        </a>
+        <div>
+          <a href="#" className='flex flex-row ml-5 font-bold mt-8'><AiOutlineMail className='mr-5 font-bold text-2xl'></AiOutlineMail>thelegendanelka@gmail.com</a>
         </div>
-          </div>
-          <div>
-          <div className='ml-32 mt-5'>
-        <a href="#" className=' text-3xl font-bold flex flex-row  '><AiOutlineMail className=' text-4xl  mr-5'/>
-        thelegendanelka@gmail.com
-        </a>
+        <div className='flex flex-row'>
+          <a href="https://www.facebook.com/leader.poseidon"><FaFacebook className='text-4xl mt-16 ml-10 hover:text-blue-600'></FaFacebook></a>
+          <a href="https://www.instagram.com/dongaanelka/"><BsInstagram className='text-4xl mt-16 ml-14 hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 hover:text-white hover:rounded-xl'></BsInstagram></a>
+          <a href="#"><BsTwitter className='text-4xl mt-16 ml-14 hover:text-blue-500'></BsTwitter></a>
+
         </div>
-        <div className='ml-32 mt-5'>
-        <a href="#" className=' text-3xl font-bold flex flex-row  '><FiPhoneCall className=' text-4xl mt-6 mr-5'/>
-        +261 32 57 390 58
-        </a>
-        <p className=' text-3xl font-bold ml-14 '>+261 34 45 925 05</p>
+
+       </div>
+       <div>
+<div className='ml-32'>
+  <input type="text" placeholder='Your Name' className='bg-white py-2 px-6  rounded-xl shadow-2xl' />  
+</div>
+<div className='ml-32'>
+  <input type="Email" placeholder='Your Email' className='bg-white py-2 px-6  rounded-xl shadow-2xl mt-8' />  
+</div>
+<div className='ml-32'>
+  <input type="text" placeholder='Your Message' className='bg-white px-6 h-40  rounded-xl shadow-2xl mt-8' />  
+</div>
+
+<div className='ml-32 mt-8'>
+ <button type='submit' className='bg-[#5b21b6] text-white w-40 h-12 text-center font-bold rounded-xl'>Send</button>
+</div>
         </div>
-          </div>
-        
-      
     </div>
   )
 }
