@@ -11,8 +11,9 @@ function HomePage() {
        <Navbar></Navbar>
        <Header></Header>
        <Contact></Contact>
-       <Skills></Skills>
        <Services></Services>
+       <Skills></Skills>
+      
        <Footer></Footer>
     </div>
   )
