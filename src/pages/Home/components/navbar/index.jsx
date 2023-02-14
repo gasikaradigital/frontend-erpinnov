@@ -9,33 +9,33 @@ function Navbar() {
             <div className='flex flex-col    w-full h-screen  '>
               <div className="flex flex-row w-full h-16 shadow-lg fixed  bg-white">              
                  <div className='p-5'>
-                <a href="#" className='flex flex-row text-3xl  font-bold'><p className='font-bold text-[#5b21b6] text-3xl'>P</p>ortfolio.</a>
+                <a href="#" className='flex flex-row text-3xl  font-bold text-[#3f3f46]'><p className='font-bold text-[#5b21b6] text-3xl'>P</p>ortfolio.</a>
                 </div>
                 <div className='flex justify-center ml-60 '>
                 <div className='p-5'>
-<a href="#" className=' font-bold text-xl '>Home</a>
+<a href="#" className=' font-bold text-xl text-[#3f3f46] '>Home</a>
                 </div>
                 <div className='p-5'>
-<a href="#" className=' font-bold text-xl'>Contact</a>
+<a href="#" className=' font-bold text-xl text-[#3f3f46]'>Contact</a>
+                </div>
+                <div className='p-5 '>
+<a href="#" className=' font-bold text-xl text-[#3f3f46]'>About</a>
                 </div>
                 <div className='p-5'>
-<a href="#" className=' font-bold text-xl'>About</a>
+<a href="#" className=' font-bold text-xl text-[#3f3f46]'>Skills</a>
                 </div>
                 <div className='p-5'>
-<a href="#" className=' font-bold text-xl'>Skills</a>
-                </div>
-                <div className='p-5'>
-<a href="#" className=' font-bold text-xl'>Services</a>
+<a href="#" className=' font-bold text-xl text-[#3f3f46]'>Services</a>
                 </div>
                 <div className='pl-5 py-5 flex flex-row ml-40'>
                   <AiFillLinkedin className=' text-2xl text-[#5b21b6]' />
-<a href="https://www.linkedin.com/in/anelka-donga-289b8122a/" className=' font-bold text-xl ml-2 cursor-pointer'>Linkdin</a>
+<a href="https://www.linkedin.com/in/anelka-donga-289b8122a/" className=' font-bold text-xl ml-2 cursor-pointer text-[#3f3f46]'>Linkdin</a>
                 </div>
                 </div>
         
                 <div className='pl-5 py-5 flex flex-row'>
                 <BsGithub className=' text-2xl text-[#5b21b6]'/>
-<a href="https://github.com/Kanel04" className=' font-bold text-xl ml-2 cursor-pointer'> GitHuB</a>
+<a href="https://github.com/Kanel04" className=' font-bold text-xl ml-2 cursor-pointer text-[#3f3f46]'> GitHuB</a>
                 </div>
                 </div>
             <div className='flex flex-row'>
