@@ -14,11 +14,11 @@ function Footer() {
           <a href="#"><BsTwitter className='text-4xl mt-8 ml-14 hover:text-blue-500 text-white'></BsTwitter></a>
         </div>
         <div className='ml-40 flex flex-col'>
-<a href="#" className='text-white font-bold mt-24'>Home</a>
-<a href="#" className='text-white font-bold mt-2'>Contact</a>
-<a href="#" className='text-white font-bold mt-2'>About</a>
-<a href="#" className='text-white font-bold mt-2'>Skills</a>
-<a href="#" className='text-white font-bold mt-2'>Services</a>
+<a href="#" className='text-white font-bold mt-24 hover:underline'>Home</a>
+<a href="#" className='text-white font-bold mt-2 hover:underline'>Contact</a>
+<a href="#" className='text-white font-bold mt-2 hover:underline'>About</a>
+<a href="#" className='text-white font-bold mt-2 hover:underline'>Skills</a>
+<a href="#" className='text-white font-bold mt-2 hover:underline'>Services</a>
 
         </div>
     </div>
