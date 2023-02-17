@@ -6,11 +6,11 @@ import {AiOutlineMail} from 'react-icons/ai'
 import {FiPhoneCall} from 'react-icons/fi'
 function Contact() {
   return (
-    <div className='h-screen w-full bg-[#e4e4e7] p-14 flex flex-row '>
-       <div className='shadow-2xl w-80 h-96  ml-80 bg-white rounded-xl  '>
-        <h1 className='text-3xl font-bold py-8 ml-12 text-[#3f3f46] '>Contact me</h1>
+    <div className='h-screen w-full bg-[#e4e4e7] p-32 flex flex-row '>
+       <div className='shadow-2xl w-80 h-96  ml-60 bg-white rounded-xl  '>
+        <h1 className='text-3xl font-bold py-8 ml-14 text-[#3f3f46] '>Contact me</h1>
         <div>
-          <a href="#" className='flex flex-row ml-5 text-2xl font-bold mt-10 text-[#3f3f46]'><FiPhoneCall className='mr-5 font-bold'></FiPhoneCall> +261325739058</a>
+          <a href="#" className='flex flex-row ml-5 text-2xl font-bold mt-10 text-[#3f3f46]'><FiPhoneCall className='mr-5 font-bold'></FiPhoneCall> +261 32 57 390 58</a>
         </div>
         <div>
           <a href="#" className='flex flex-row ml-5 font-bold mt-8 text-[#3f3f46]'><AiOutlineMail className='mr-5 font-bold text-2xl'></AiOutlineMail>thelegendanelka@gmail.com</a>

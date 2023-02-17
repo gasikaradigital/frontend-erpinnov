@@ -29,7 +29,7 @@ function Navbar() {
                 </div>
                 <div className='pl-5 py-5 flex flex-row ml-40'>
                   <AiFillLinkedin className=' text-2xl text-[#5b21b6]' />
-<a href="https://www.linkedin.com/in/anelka-donga-289b8122a/" className=' font-bold text-xl ml-2 cursor-pointer text-[#3f3f46]'>Linkdin</a>
+<a href="https://www.linkedin.com/in/anelka-donga-289b8122a/" className=' font-bold text-xl ml-2 cursor-pointer text-[#3f3f46]'>LinkdIn</a>
                 </div>
                 </div>
         
@@ -39,11 +39,11 @@ function Navbar() {
                 </div>
                 </div>
             <div className='flex flex-row'>
-            <div className='bg-[#5b21b6] w-96 h-96 mt-24 ml-60 rounded-full shadow-xl'>
-                  <p className='text-9xl font-bold  text-white text-center mt-24 ml-14'>I'm</p>
+            <div className='bg-[#5b21b6] w-96 h-96 mt-24 ml-40 rounded-full shadow-xl'>
+                  <p className='text-9xl font-bold  text-white text-center mt-24 ml-14 flex flex-row'>I'm <p className='text-white font-bold text-5xl mt-20 ml-24'>a</p> </p>
             </div>
             <div className='mt-40 '>
-              <p className='flex flex-row font-bold text-5xl bg-black w-80 h-80 rounded-full py-24 text-white mt-5'><p className='text-[#5b21b6] font-bold text-5xl ml-6'>D</p>eveloper <p className='text-[#5b21b6] ml-7 font-bold text-5xl flex flex-row mt-8'><p className='text-white font-bold text-5xl'>F</p>ullstack</p></p>
+              <p className='flex flex-row font-bold text-5xl bg-black w-80 h-80 rounded-full py-24 text-white mt-5'><p className='text-[#5b21b6] font-bold text-5xl ml-6'>F</p>ullstack <p className='text-[#5b21b6] ml-12 font-bold text-5xl flex flex-row mt-8'><p className='text-white font-bold text-5xl ml-1'>D</p>eveloper</p></p>
             </div>
             <div className="ml-24">
               <img src={Anelka} alt="photo" />

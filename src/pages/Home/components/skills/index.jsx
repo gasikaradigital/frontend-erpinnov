@@ -16,7 +16,7 @@ function Skills
   <div className='flex flex-row'>
     <div>
 
-    <h1 className='text-2xl font-bold pl-14 ml-4  text-[#3f3f46]'>Frontend Developper</h1>
+    <h1 className='text-2xl font-bold pl-14 ml-4  text-[#3f3f46]'>Frontend Developer</h1>
     <div className='w-96 h-36 rounded-2xl shadow-2xl ml-14 mt-5 bg-white p-6 '>
       <div className='flex flex-row  '>
       <p className='text-lg font-bold  ml-6 text-[#3f3f46]'>html</p>
