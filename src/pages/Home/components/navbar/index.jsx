@@ -1,31 +1,34 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { BsGithub } from 'react-icons/bs';
 import { AiFillLinkedin } from 'react-icons/ai';
+
 import Anelka from '../assets/anelka-r.png'
+import {FaBars} from 'react-icons/fa'
 function Navbar() {
+  
   return (
     <div>
          <div>
-            <div className='flex flex-col    w-full h-screen  '>
+            <div id='home' className='flex flex-col    w-full h-screen  '>
               <div className="flex flex-row w-full h-16 shadow-lg fixed  bg-white">              
                  <div className='p-5'>
-                <a href="#" className='flex flex-row text-3xl  font-bold text-[#3f3f46]'><p className='font-bold text-[#5b21b6] text-3xl'>P</p>ortfolio.</a>
+                <a href="#home" className='flex flex-row text-3xl  font-bold text-[#3f3f46]'><p className='font-bold text-[#5b21b6] text-3xl'>P</p>ortfolio.</a>
                 </div>
                 <div className='flex justify-center ml-60 '>
                 <div className='p-5'>
-<a href="#" className=' font-bold text-xl text-[#3f3f46] '>Home</a>
+<a  href="#home" className=' font-bold text-xl text-[#3f3f46]  '  >Home</a>
                 </div>
                 <div className='p-5'>
-<a href="#" className=' font-bold text-xl text-[#3f3f46]'>Contact</a>
+<a href="#contact" className=' font-bold text-xl text-[#3f3f46]'>Contact</a>
                 </div>
                 <div className='p-5 '>
-<a href="#" className=' font-bold text-xl text-[#3f3f46]'>About</a>
+<a href="#about" className=' font-bold text-xl text-[#3f3f46]'>About</a>
                 </div>
                 <div className='p-5'>
-<a href="#" className=' font-bold text-xl text-[#3f3f46]'>Skills</a>
+<a href="#skills" className=' font-bold text-xl text-[#3f3f46]'>Skills</a>
                 </div>
                 <div className='p-5'>
-<a href="#" className=' font-bold text-xl text-[#3f3f46]'>Services</a>
+<a href="#services" className=' font-bold text-xl text-[#3f3f46]'>Services</a>
                 </div>
                 <div className='pl-5 py-5 flex flex-row ml-40'>
                   <AiFillLinkedin className=' text-2xl text-[#5b21b6]' />

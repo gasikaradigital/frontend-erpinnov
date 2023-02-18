@@ -10,10 +10,10 @@ function Skills
 () {
   return (
     <div>
-        <div className='w-full h-screen bg-[#e4e4e7]'>
+        <div id='skills' className='w-full h-screen bg-[#e4e4e7]'>
  <div className='p-12'>
   
-  <div className='flex flex-row'>
+  <div className='flex flex-row py-12'>
     <div>
 
     <h1 className='text-2xl font-bold pl-14 ml-4  text-[#3f3f46]'>Frontend Developer</h1>
@@ -63,7 +63,16 @@ function Skills
     </div>
     </div>
     <div>
-    <h1 className='text-2xl font-bold pl-14 ml-4  text-[#3f3f46]'>Backend developer</h1>
+   
+    <h1 className='text-2xl font-bold pl-14 ml-4  text-[#3f3f46]'>Design UX\UI</h1>
+    <div className='w-96 h-20 rounded-2xl shadow-2xl ml-14 mt-5 bg-white p-6 '>
+      <div className='flex flex-row  '>
+      <p className='text-lg font-bold  ml-6 text-[#3f3f46]'>Figma</p>
+      <div className=''></div>
+      </div>
+    </div>
+ 
+    <h1 className='text-2xl font-bold pl-14 ml-4 mt-28 text-[#3f3f46]'>Backend developer</h1>
     <div className='w-96 h-60 rounded-2xl shadow-2xl ml-14 mt-5 bg-white p-6 '>
       <div className='flex flex-row  '>
       <p className='text-lg font-bold  ml-6 text-[#3f3f46]'>Firebase</p>
@@ -86,10 +95,12 @@ function Skills
       <div className=''></div>
       </div>
     </div>
-    <h1 className='text-2xl font-bold pl-14 ml-4 mt-28 text-[#3f3f46]'>Design UX\UI</h1>
+    </div>
+    <div>
+    <h1 className='text-2xl font-bold pl-14 ml-4  text-[#3f3f46]'>CMS</h1>
     <div className='w-96 h-20 rounded-2xl shadow-2xl ml-14 mt-5 bg-white p-6 '>
       <div className='flex flex-row  '>
-      <p className='text-lg font-bold  ml-6 text-[#3f3f46]'>Figma</p>
+      <p className='text-lg font-bold  ml-6 text-[#3f3f46]'>WordPress</p>
       <div className=''></div>
       </div>
     </div>

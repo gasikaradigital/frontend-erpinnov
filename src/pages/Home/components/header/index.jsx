@@ -27,16 +27,16 @@ function Header() {
   };
 
   return (
-    <div className='flex justify-center h-screen bg-[#ede9fe] '>
+    <div id='about' className='flex justify-center h-screen bg-[#ede9fe] py-8 '>
       
-      <div className='flex flex-row  bg-white shadow-xl rounded-xl  m-14  '>
+      <div className='flex flex-row  bg-white shadow-xl rounded-xl  ml-20 mt-20 mr-20 '>
         <div className='w-96 h-full  overflow-hidden bg-no-repeat bg-cover hover:rounded-l-xl '>
         <img src={Anelka} alt="AnelkaPhoto" className='w-96 h-full rounded-l-xl  hover:scale-110 transition duration-300 ease-in-out hover:rounded-l-xl ' />
         </div>
        
         <div className='w-96 h-full  m-5'>
         <p className='font-bold text-5xl text-[#3f3f46] '>JAOSOA Donga Anelka</p>
-          <p className='text-2xl font-bold mt-16 text-[#52525b] '>Developer Fullstack , passionate of programming langage, designers and 3D developer. I can work with group </p>
+          <p className='text-2xl font-bold mt-8 text-[#52525b] '>Developer Fullstack , passionate of programming langage, designers and 3D developer. I can work with group </p>
           <p className='text-xl font-bold mt-5 text-[#52525b]'>Member of google developers groups GDG Mahajanga</p>
           <div className='flex flex-row mt-5'>
 <MdPlace className='text-xl text-[#5b21b6] hover:underline'/>         
