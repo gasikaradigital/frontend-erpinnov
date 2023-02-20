@@ -1,11 +1,11 @@
-import React,{useState} from 'react'
+import React from 'react'
 import { BsGithub } from 'react-icons/bs';
 import { AiFillLinkedin } from 'react-icons/ai';
-
-import Anelka from '../assets/anelka-r.png'
-import {FaBars} from 'react-icons/fa'
+import Anelka from '../assets/anelka-r.png';
+import {FaBars} from 'react-icons/fa';
+import {motion} from 'framer-motion'
 function Navbar() {
-  
+
   return (
     <div>
          <div>
@@ -42,7 +42,9 @@ function Navbar() {
                 </div>
                 </div>
             <div className='flex flex-row'>
-            <div className='bg-[#5b21b6] w-96 h-96 mt-24 ml-40 rounded-full shadow-xl'>
+            <div 
+     
+            className='bg-[#5b21b6] w-96 h-96 mt-24 ml-40 rounded-full shadow-xl'>
                   <p className='text-9xl font-bold  text-white text-center mt-24 ml-14 flex flex-row'>I'm <p className='text-white font-bold text-5xl mt-20 ml-24'>a</p> </p>
             </div>
             <div className='mt-40 '>
