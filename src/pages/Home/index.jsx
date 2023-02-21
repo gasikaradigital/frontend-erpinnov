@@ -7,13 +7,12 @@ import Services from './components/services'
 import Skills from './components/skills'
 function HomePage() {
   return (
-    <div>
+    <div className='scroll-smooth'>
        <Navbar></Navbar>
        <Header></Header>
        <Contact></Contact>
        <Services></Services>
-       <Skills></Skills>
-      
+       <Skills></Skills>      
        <Footer></Footer>
     </div>
   )
