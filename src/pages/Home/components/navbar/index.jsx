@@ -10,16 +10,16 @@ function Navbar() {
     <div>
          <div>
             <div id='home' className='flex flex-col    w-full h-screen  '>
-              <div className="flex flex-row w-full h-16 shadow-lg fixed  bg-white">              
+              <div className="flex flex-row w-full h-16 shadow-lg fixed  bg-white  ">              
                  <div className='p-5'>
-                <a href="#home" className='flex flex-row text-3xl  font-bold text-[#3f3f46]'><p className='font-bold text-[#5b21b6] text-3xl'>P</p>ortfolio.</a>
+                <a href="#home" className='flex flex-row text-3xl  font-bold text-[#3f3f46] '><p className='font-bold text-[#5b21b6] text-3xl '>P</p>ortfolio.</a>
                 </div>
                 <div className='flex justify-center ml-60 '>
                 <div className='p-5'>
-<a  href="#home" className=' font-bold text-xl text-[#3f3f46]  '  >Home</a>
+<a  href="#home" className=' font-bold text-xl text-[#3f3f46] '  >Home</a>
                 </div>
                 <div className='p-5'>
-<a href="#contact" className=' font-bold text-xl text-[#3f3f46]'>Contact</a>
+<a href="#contact" className=' font-bold text-xl text-[#3f3f46] '>Contact</a>
                 </div>
                 <div className='p-5 '>
 <a href="#about" className=' font-bold text-xl text-[#3f3f46]'>About</a>
@@ -44,8 +44,8 @@ function Navbar() {
             <div className='flex flex-row'>
             <div 
      
-            className='bg-[#5b21b6] w-96 h-96 mt-24 ml-40 rounded-full shadow-xl'>
-                  <p className='text-9xl font-bold  text-white text-center mt-24 ml-14 flex flex-row'>I'm <p className='text-white font-bold text-5xl mt-20 ml-24'>a</p> </p>
+            className='bg-[#5b21b6] w-96 h-96 mt-24 ml-40 rounded-full shadow-xl '>
+                  <p className='text-9xl font-bold  text-white text-center mt-24 ml-14 flex flex-row  '>I'm <p className='text-white font-bold text-5xl mt-20 ml-24 '>a</p> </p>
             </div>
             <div className='mt-40 '>
               <p className='flex flex-row font-bold text-5xl bg-black w-80 h-80 rounded-full py-24 text-white mt-5'><p className='text-[#5b21b6] font-bold text-5xl ml-6'>F</p>ullstack <p className='text-[#5b21b6] ml-12 font-bold text-5xl flex flex-row mt-8'><p className='text-white font-bold text-5xl ml-1'>D</p>eveloper</p></p>
