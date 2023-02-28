@@ -10,10 +10,10 @@ function Skills
 () {
   return (
     <div>
-        <div id='skills' className='w-full h-screen bg-[#e4e4e7]'>
+        <div id='skills' className='lg:w-full lg:h-screen bg-[#e4e4e7] w-96'>
  <div className='p-12'>
   
-  <div className='flex flex-row py-12'>
+  <div className='flex lg:flex-row flex-col py-12'>
     <div>
 
     <h1 className='text-2xl font-bold pl-14 ml-4  text-[#3f3f46]'>Frontend Developer</h1>

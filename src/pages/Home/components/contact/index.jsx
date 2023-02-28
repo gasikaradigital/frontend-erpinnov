@@ -28,7 +28,7 @@ function Contact() {
     }
   };
   return (
-    <div id='contact' className='h-screen w-full bg-[#e4e4e7] p-32 flex flex-row '>
+    <div id='contact' className='lg:h-screen lg:w-full bg-[#e4e4e7] p-32 flex flex-row w-96'>
        <div className='shadow-2xl w-80 h-96  ml-60 bg-white rounded-xl  '>
         <h1 className='text-3xl font-bold py-8 ml-14 text-[#3f3f46] '>Contact me</h1>
         <div>

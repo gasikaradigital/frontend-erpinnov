@@ -4,7 +4,7 @@ import {BsInstagram} from 'react-icons/bs'
 import {BsTwitter} from 'react-icons/bs'
 function Footer() {
   return (
-    <div className='w-full h-80 bg-black flex flex-row'>
+    <div className='lg:w-full lg:h-80 bg-black flex flex-row w-96'>
       <div className='mt-40 ml-14'>
         <a href="#home" className='text-2xl font-bold text-white'>Portfolio.</a>
       </div>
