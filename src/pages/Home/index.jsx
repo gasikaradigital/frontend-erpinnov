@@ -7,7 +7,7 @@ import Services from './components/services'
 import Skills from './components/skills'
 function HomePage() {
   return (
-    <div className='scroll-smooth'>
+    <div className='scroll-smooth overflow-hidden'>
        <Navbar></Navbar>
        <Header></Header>
        <Contact></Contact>
