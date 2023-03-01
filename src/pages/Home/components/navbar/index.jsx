@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useState} from 'react'
 import { BsGithub } from 'react-icons/bs';
 import { AiFillLinkedin } from 'react-icons/ai';
 import Anelka from '../assets/anelka-r.png';
@@ -9,6 +9,8 @@ function Navbar() {
     let list = document.querySelector('ul');
     e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
   }
+  const [show , setshow]= useState(false);
+
   return (
     <div>
          <div>
@@ -17,7 +19,7 @@ function Navbar() {
                  <div className='p-5'>
                 <a href="#home" className='flex flex-row lg:text-3xl text-xl font-bold text-[#3f3f46] '><p className='font-bold text-[#5b21b6] lg:text-3xl text-xl '>P</p>ortfolio.</a>
                 </div>
-                <div className='flex lg:flex-row flex-col lg:justify-center lg:ml-60 flex-col '>
+                <div className={`md:flex lg:flex-row  lg:justify-center lg:ml-60 ${show?'lg:flex-col':'hidden'}`}>
                 <div className='p-5'>
 <a  href="#home" className=' font-bold lg:text-xl text-[#3f3f46] '  >Home</a>
                 </div>
@@ -44,12 +46,12 @@ function Navbar() {
                 </div>
         
              
-                <FaBars  className=' text-2xl mt-5  lg:hidden ml-24 text-[#3f3f46] ' >  </FaBars>
+                <FaBars  className=' text-2xl mt-5  lg:hidden ml-[200px] text-[#3f3f46] ' >  </FaBars>
                 </div>
             <div className='flex lg:flex-row flex-col justify-center m-5 w-96 lg:w-full'>
             <div 
      
-            className='bg-[#5b21b6] lg:w-96 lg:h-96 w-60 h-60  lg:mt-24 mt-32 ml-40 mt-24 rounded-full shadow-xl '>
+            className='bg-[#5b21b6] lg:w-96 lg:h-96 w-60 h-60  lg:mt-24 mt-32 ml-28 mt-24 rounded-full shadow-xl '>
                   <p className='lg:text-9xl text-4xl font-bold  text-white text-center lg:mt-24 mt-24  ml-14 flex flex-row  '>I'm <p className='text-white font-bold lg:text-5xl lg:mt-20 lg:ml-24 mt-1 ml-2 text-3xl '>a</p> </p>
             </div>
             <div className='lg:mt-40  '>

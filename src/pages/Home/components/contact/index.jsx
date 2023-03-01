@@ -29,7 +29,7 @@ function Contact() {
   };
   return (
     <div id='contact' className='lg:h-screen lg:w-screen bg-[#e4e4e7] lg:p-32 p-6 flex lg:flex-row flex-col w-96'>
-       <div className='shadow-2xl lg:w-80 lg:h-96 w-60 p-2 h-60 lg:ml-60 ml-2 bg-white rounded-xl  '>
+       <div className='shadow-2xl lg:w-80 lg:h-96 w-60 p-2 h-60 lg:ml-60 ml-12 bg-white rounded-xl  '>
         <h1 className='lg:text-3xl text-xl font-bold lg:py-8 py-4 ml-14 text-[#3f3f46] '>Contact me</h1>
         <div>
           <a href="#" className='flex flex-row ml-5 lg:text-2xl text-lg font-bold lg:mt-10 mt-2 text-[#3f3f46]'><FiPhoneCall className='mr-5 font-bold'></FiPhoneCall> +261 32 57 390 58</a>
@@ -46,19 +46,19 @@ function Contact() {
 
        </div>
        <form onSubmit={handleSubmit}>      
-        <div>
-<div className='lg:ml-32  mt-5'>
+        <div className='lg:ml-32 ml-12'>
+<div className='   mt-5'>
   <input type="text" placeholder='Your Name' className='bg-white py-2 lg:px-6 px-3  rounded-xl shadow-2xl' 
   
   />  
 </div>
-<div className='lg:ml-32'>
+<div className=''>
   <input type="Email" placeholder='Your Email' className='bg-white py-2 lg:px-6 px-3 rounded-xl shadow-2xl mt-8'
   value={recipient}
   onChange={(e) => setRecipient(e.target.value)}
   />  
 </div>
-<div className='lg:ml-32'>
+<div className=''>
   <input type="text" placeholder='Your Message' className='bg-white lg:px-6 px-3 h-40  rounded-xl shadow-2xl mt-8'
    value={message}
    onChange={(e) => setMessage(e.target.value)}
