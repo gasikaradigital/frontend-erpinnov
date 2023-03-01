@@ -34,7 +34,7 @@ function Header() {
         <img src={Anelka} alt="AnelkaPhoto" className='lg:w-96 lg:h-full h-80 w-80 lg:rounded-l-xl rounded-t-xl  hover:scale-110 transition duration-300 ease-in-out hover:rounded-l-xl ' />
         </div>
        
-        <div className='lg:w-96 lg:h-full w-40 h-96 m-8'>
+        <div className='lg:w-96 lg:h-full w-40 h-96 lg:m-8 m-6'>
         <p className='font-bold lg:text-5xl text-2xl text-[#3f3f46] '>JAOSOA Donga Anelka</p>
           <p className='lg:text-2xl text-sm font-bold lg:mt-8 mt-4 text-[#52525b] '>Developer Fullstack , passionate of programming langage, designers and 3D developer. I can work with group </p>
           <p className='lg:text-xl text-sm font-bold mt-5 text-[#52525b]'>Member of google developers groups GDG Mahajanga</p>
