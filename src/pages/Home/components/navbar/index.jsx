@@ -13,7 +13,7 @@ function Navbar() {
     <div>
          <div>
             <div id='home' className='flex flex-col    lg:w-full w-96   lg:h-screen  '>
-              <div className="flex flex-row lg:w-full lg:h-16 lg:w-screen w-96 shadow-lg fixed  bg-white h-16 ">              
+              <div className="flex flex-row lg:w-full lg:h-16 lg:w-full w-96 shadow-lg fixed  bg-white h-16 ">              
                  <div className='p-5'>
                 <a href="#home" className='flex flex-row lg:text-3xl text-xl font-bold text-[#3f3f46] '><p className='font-bold text-[#5b21b6] lg:text-3xl text-xl '>P</p>ortfolio.</a>
                 </div>
@@ -46,7 +46,7 @@ function Navbar() {
              
                 <FaBars  className=' text-2xl mt-5  lg:hidden ml-24 text-[#3f3f46] ' >  </FaBars>
                 </div>
-            <div className='flex lg:flex-row flex-col justify-center m-5 w-96 lg:w-full'>
+            <div className='flex lg:flex-row flex-col justify-center m-5 w-96 lg:w-screen'>
             <div 
      
             className='bg-[#5b21b6] lg:w-96 lg:h-96 w-60 h-60  lg:mt-24 mt-32 ml-40 mt-24 rounded-full shadow-xl '>

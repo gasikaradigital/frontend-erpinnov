@@ -5,7 +5,7 @@ import Photographer from '../assets/photographer.png'
 
 function Services() {
   return (
-    <div id='services' className='lg:w-full lg:h-screen bg-[#ede9fe] w-96'>
+    <div id='services' className='lg:w-screen lg:h-screen bg-[#ede9fe] w-96'>
 <div className='flex lg:flex-row flex-col lg:p-28 p-5'>
 <div className='lg:w-96 lg:h-96 w-60 h-60 shadow-xl rounded-2xl lg:ml-6 ml-2 mt-10 bg-white p-2 '>
 <img src={Web} alt="web" />
