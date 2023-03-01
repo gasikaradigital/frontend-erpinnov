@@ -11,7 +11,7 @@ function Skills
   return (
     <div>
         <div id='skills' className='lg:w-full lg:h-screen bg-[#e4e4e7] w-96'>
- <div className='p-12'>
+ <div className='lg:p-12 p-5'>
   
   <div className='flex lg:flex-row flex-col py-12'>
     <div>

@@ -27,14 +27,14 @@ function Header() {
   };
 
   return (
-    <div id='about' className='flex justify-center lg:h-screen bg-[#ede9fe] lg:py-8 py-5'>
+    <div id='about' className='flex justify-center lg:h-screen bg-[#ede9fe] lg:py-8 py-5 lg:w-full w-96'>
       
       <div className='flex lg:flex-row flex-col bg-white shadow-xl rounded-xl  lg:ml-20 lg:mt-20 lg:mr-20  '>
         <div className='lg:w-96 lg:h-full  overflow-hidden bg-no-repeat bg-cover hover:rounded-l-xl  '>
         <img src={Anelka} alt="AnelkaPhoto" className='lg:w-96 lg:h-full h-80 w-80 lg:rounded-l-xl rounded-t-xl  hover:scale-110 transition duration-300 ease-in-out hover:rounded-l-xl ' />
         </div>
        
-        <div className='lg:w-96 lg:h-full w-40 h-96  m-8'>
+        <div className='lg:w-96 lg:h-full w-40 h-96 m-8'>
         <p className='font-bold lg:text-5xl text-2xl text-[#3f3f46] '>JAOSOA Donga Anelka</p>
           <p className='lg:text-2xl text-sm font-bold lg:mt-8 mt-4 text-[#52525b] '>Developer Fullstack , passionate of programming langage, designers and 3D developer. I can work with group </p>
           <p className='lg:text-xl text-sm font-bold mt-5 text-[#52525b]'>Member of google developers groups GDG Mahajanga</p>
