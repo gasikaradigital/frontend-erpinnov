@@ -40,7 +40,7 @@ function Contact() {
         <div className='flex flex-row m-2'>
           <a href="https://www.facebook.com/leader.poseidon"><FaFacebook className='text-4xl lg:mt-16 mt-6 lg:ml-10 ml-4  hover:text-blue-600 text-[#3f3f46]'></FaFacebook></a>
           <a href="https://www.instagram.com/dongaanelka/"><BsInstagram className='text-4xl lg:mt-16 mt-6 ml-9 text-[#3f3f46] hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 hover:text-white hover:rounded-xl'></BsInstagram></a>
-          <a href="#"><BsTwitter className='text-4xl lg:mt-16 mt-6 ml-9 hover:text-blue-500 text-[#3f3f46]'></BsTwitter></a>
+          <a href="https://twitter.com/DongaAnelka"><BsTwitter className='text-4xl lg:mt-16 mt-6 ml-9 hover:text-blue-500 text-[#3f3f46]'></BsTwitter></a>
 
         </div>
 

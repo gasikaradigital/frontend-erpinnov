@@ -11,7 +11,7 @@ function Footer() {
        <div className='flex flex-col lg:ml-40 ml-16 '>
           <a href="https://www.facebook.com/leader.poseidon"><FaFacebook className='lg:text-4xl text-2xl lg:mt-24 mt-6 lg:ml-14 ml-4 hover:text-blue-600 text-white'></FaFacebook></a>
           <a href="https://www.instagram.com/dongaanelka/"><BsInstagram className='lg:text-4xl text-2xl lg:mt-8 mt-4 lg:ml-14 ml-4 text-white hover:bg-gradient-to-r hover:from-purple-500 hover:to-pink-500 hover:text-white hover:rounded-xl'></BsInstagram></a>
-          <a href="#"><BsTwitter className='lg:text-4xl text-2xl lg:mt-8 mt-4 lg:ml-14 ml-4 hover:text-blue-500 text-white'></BsTwitter></a>
+          <a href="https://twitter.com/DongaAnelka"><BsTwitter className='lg:text-4xl text-2xl lg:mt-8 mt-4 lg:ml-14 ml-4 hover:text-blue-500 text-white'></BsTwitter></a>
         </div>
         <div className='lg:ml-40 ml-14 flex flex-col p-4'>
 <a href="#home" className='text-white  font-bold lg:mt-24 hover:underline'>Home</a>

@@ -3,13 +3,34 @@ import { BsGithub } from 'react-icons/bs';
 import { AiFillLinkedin } from 'react-icons/ai';
 import Anelka from '../assets/anelka-r.png';
 import {FaBars} from 'react-icons/fa';
+import {IoMdClose} from 'react-icons/io';
 import {motion} from 'framer-motion'
 function Navbar() {
   function Menu(e){
     let list = document.querySelector('ul');
     e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
   }
-  const [show , setshow]= useState(false);
+const [show , setshow]= useState(false);
+
+const [showNav, setShowNav] = useState(false);
+
+const toggleNav = () => {
+   setShowNav(!showNav);
+   console.log('hi33')
+};
+
+const navClasses = (
+  'bg-black',
+  'text-white',
+  'w-full',
+  'fixed',
+  'top-0',
+  'left-0',
+  'z-50',
+  {
+    hidden: !showNav,
+  }
+);
 
   return (
     <div>
@@ -19,7 +40,7 @@ function Navbar() {
                  <div className='p-5'>
                 <a href="#home" className='flex flex-row lg:text-3xl text-xl font-bold text-[#3f3f46] '><p className='font-bold text-[#5b21b6] lg:text-3xl text-xl '>P</p>ortfolio.</a>
                 </div>
-                <div className={`md:flex lg:flex-row  lg:justify-center lg:ml-60 ${show?'lg:flex-col':'hidden'}`}>
+                <div className={`md:flex lg:flex-row  lg:justify-center lg:ml-60 ${show?'lg:flex-col':'hidden'} ${navClasses}`}>
                 <div className='p-5'>
 <a  href="#home" className=' font-bold lg:text-xl text-[#3f3f46] '  >Home</a>
                 </div>
@@ -46,7 +67,7 @@ function Navbar() {
                 </div>
         
              
-                <FaBars  className=' text-2xl mt-5  lg:hidden ml-[200px] text-[#3f3f46] ' >  </FaBars>
+                <FaBars  className=' text-2xl mt-5  lg:hidden ml-[200px] text-[#3f3f46] ' onClick={toggleNav} >  </FaBars>
                 </div>
             <div className='flex lg:flex-row flex-col justify-center m-5 w-96 lg:w-full'>
             <div 
