@@ -4,12 +4,12 @@ exports.sendEmail = catchAsync(async (req, res, next) => {
     const nodemailer = require('nodemailer');
 
     const transporter = nodemailer.createTransport({
-      host: 'smtp.example.com',
+      service: 'Gmail',
       port: 465,
       secure: true,
       auth: {
-        user: 'username',
-        pass: 'password'
+        user: 'thelegendanelka@gmail.com',
+        pass: 'Anelka1610'
       }
     });
     
@@ -18,8 +18,8 @@ exports.sendEmail = catchAsync(async (req, res, next) => {
     
       try {
         const info = await transporter.sendMail({
-          from: '"My Website" <info@mywebsite.com>',
-          to: 'contact@mywebsite.com',
+          from: '"My Website Portfolio',
+          to: email,
           subject: `New message from ${name} (${email})`,
           text: message
         });
