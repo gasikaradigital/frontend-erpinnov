@@ -5,32 +5,22 @@ import Anelka from '../assets/anelka-r.png';
 import {FaBars} from 'react-icons/fa';
 import {IoMdClose} from 'react-icons/io';
 import {motion} from 'framer-motion'
+
 function Navbar() {
-  function Menu(e){
-    let list = document.querySelector('ul');
-    e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
-  }
+  
 const [show , setshow]= useState(false);
+const [isOpen, setIsOpen] = useState(false);
 
-const [showNav, setShowNav] = useState(false);
+function showNavbar(){
+  
+  const nav = document.getElementById("navbar");
+  const ClassList = nav.classList ;
+  nav.classList.remove("hidden");
+  ClassList.add("bg-white h-96 w-96");
+} 
 
-const toggleNav = () => {
-   setShowNav(!showNav);
-   console.log('hi33')
-};
 
-const navClasses = (
-  'bg-black',
-  'text-white',
-  'w-full',
-  'fixed',
-  'top-0',
-  'left-0',
-  'z-50',
-  {
-    hidden: !showNav,
-  }
-);
+
 
   return (
     <div>
@@ -40,7 +30,7 @@ const navClasses = (
                  <div className='p-5'>
                 <a href="#home" className='flex flex-row lg:text-3xl text-xl font-bold text-[#3f3f46] '><p className='font-bold text-[#5b21b6] lg:text-3xl text-xl '>P</p>ortfolio.</a>
                 </div>
-                <div className={`md:flex lg:flex-row  lg:justify-center lg:ml-60 ${show?'lg:flex-col':'hidden'} ${navClasses}`}>
+                <div id='navbar' className={`md:flex lg:flex-row  lg:justify-center lg:ml-60 ${show?'flex-col':'hidden'} `}>
                 <div className='p-5'>
 <a  href="#home" className=' font-bold lg:text-xl text-[#3f3f46] '  >Home</a>
                 </div>
@@ -66,9 +56,47 @@ const navClasses = (
                 </div>
                 </div>
         
-             
-                <FaBars  className=' text-2xl mt-5  lg:hidden ml-[200px] text-[#3f3f46] ' onClick={toggleNav} >  </FaBars>
+             <button 
+             type='button'
+             onClick={() => setIsOpen(!isOpen)}
+             className="block text-white hover:text-gray-100 focus:text-gray-100 focus:outline-none"
+             >
+              {isOpen ? (<div className='bg-white w-96'>
+                   <div id='navbar' className={`md:flex lg:flex-row  lg:justify-center lg:ml-60 flex-col `}>
+                   <IoMdClose className=' text-2xl mt-5  lg:hidden ml-[200px] text-[#3f3f46] '></IoMdClose>
+                   <div className='p-5'>
+   <a  href="#home" className=' font-bold lg:text-xl text-[#3f3f46] '  >Home</a>
+                   </div>
+                   <div className='p-5'>
+   <a href="#contact" className=' font-bold lg:text-xl text-[#3f3f46] '>Contact</a>
+                   </div>
+                   <div className='p-5 '>
+   <a href="#about" className=' font-bold lg:text-xl text-[#3f3f46]'>About</a>
+                   </div>
+                   <div className='p-5'>
+   <a href="#skills" className=' font-bold lg:text-xl text-[#3f3f46]'>Skills</a>
+                   </div>
+                   <div className='p-5'>
+   <a href="#services" className=' font-bold lg:text-xl text-[#3f3f46]'>Services</a>
+                   </div>
+                   <div className='pl-5 py-5 flex flex-row lg;ml-40 xl:ml-40 ml-32  '>
+                     <AiFillLinkedin className=' lg:text-2xl text-xl text-[#5b21b6]' />
+   <a href="https://www.linkedin.com/in/anelka-donga-289b8122a/" className=' font-bold lg:text-xl ml-2 cursor-pointer text-[#3f3f46]'>LinkdIn</a>
+                   </div>
+                   <div className='pl-5 py-5 flex flex-row ml-32'>
+                   <BsGithub className=' lg:text-2xl text-xl text-[#5b21b6]'/>
+   <a href="https://github.com/Kanel04" className=' font-bold lg:text-xl ml-2 cursor-pointer text-[#3f3f46]'> GitHuB</a>
+                   </div>
+                   </div>              
+                
                 </div>
+                 ) : (
+             <FaBars   className=' text-2xl mt-5  lg:hidden ml-[200px] text-[#3f3f46] '  >  </FaBars>
+             )}
+
+
+             </button>
+                              </div>
             <div className='flex lg:flex-row flex-col justify-center m-5 w-96 lg:w-full'>
             <div 
      
