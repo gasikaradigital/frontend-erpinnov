@@ -64,7 +64,7 @@ function Skills
     </div>
     <div>
    
-    <h1 className='text-2xl font-bold pl-14 ml-4 mt-5  text-[#3f3f46]'>Design UX\UI</h1>
+    <h1 className='text-2xl font-bold pl-14 ml-4 mt-5 lg:mt-0  text-[#3f3f46]'>Design UX\UI</h1>
     <div className='lg:w-96 w-80 h-20 rounded-2xl shadow-2xl lg:ml-14 mt-5 bg-white p-6 '>
       <div className='flex flex-row  '>
       <p className='text-lg font-bold  ml-6 text-[#3f3f46]'>Figma</p>
@@ -72,7 +72,7 @@ function Skills
       </div>
     </div>
  
-    <h1 className='text-2xl font-bold pl-14 ml-4 lg:mt-28 mt-5 text-[#3f3f46]'>Backend developer</h1>
+    <h1 className='text-2xl font-bold pl-14 ml-4 lg:mt-28  mt-5 text-[#3f3f46]'>Backend developer</h1>
     <div className='lg:w-96 w-80 h-60 rounded-2xl shadow-2xl lg:ml-14 mt-5 bg-white p-6 '>
       <div className='flex flex-row  '>
       <p className='text-lg font-bold  ml-6 text-[#3f3f46]'>Firebase</p>
@@ -97,7 +97,7 @@ function Skills
     </div>
     </div>
     <div>
-    <h1 className='text-2xl font-bold pl-14 ml-4 mt-5 text-[#3f3f46]'>CMS</h1>
+    <h1 className='text-2xl font-bold pl-14 ml-4 mt-5 lg:mt-0 text-[#3f3f46]'>CMS</h1>
     <div className='lg:w-96 w-80 h-20 rounded-2xl shadow-2xl lg:ml-14 mt-5 bg-white p-6 '>
       <div className='flex flex-row  '>
       <p className='text-lg font-bold  ml-6 text-[#3f3f46]'>WordPress</p>
