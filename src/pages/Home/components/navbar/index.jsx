@@ -61,7 +61,7 @@ function showNavbar(){
              onClick={() => setIsOpen(!isOpen)}
              className="block text-white hover:text-gray-100 focus:text-gray-100 focus:outline-none"
              >
-              {isOpen ? (<div className='bg-white w-96 rounded-l-xl'>
+              {isOpen ? (<div className='bg-white w-96 rounded-l-xl lg:hidden'>
                    <div id='navbar' className={`md:flex lg:flex-row  lg:justify-center lg:ml-60 mr-28  `}>
                    <IoMdClose className=' text-2xl mt-5  lg:hidden ml-[200px] text-[#3f3f46] '></IoMdClose>
                    <div className='p-5'>

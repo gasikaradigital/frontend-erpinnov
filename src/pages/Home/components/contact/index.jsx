@@ -5,27 +5,26 @@ import {BsTwitter} from 'react-icons/bs'
 import {AiOutlineMail} from 'react-icons/ai'
 import {FiPhoneCall} from 'react-icons/fi'
 import axios from "axios";
-import { toast } from 'react-toastify';
+import  toast  from 'react-hot-toast';
+import {BASE_URL} from '../../../../constant/index'
 function Contact() {
 
-  const [recipient, setRecipient] = useState('');
-  const [subject, setSubject] = useState('');
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
   const [message, setMessage] = useState('');
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await axios.post('http://localhost:5000/contact/sendemail', {
-        recipient: recipient,
-        subject: subject,
-        message: message,
-      });
-      console.log(response);
-      toast.success("successfully!");
-    } catch (error) {
-      console.error(error);
-      toast.error("Error");
-    }
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    axios.post(`${BASE_URL}/contact/sendemail`, { name, email , message })
+      .then((response) => {
+        console.log(response);
+        toast.success(response)
+      })
+      .catch((error) => {
+        console.log(error);
+        toast.error("This didn't work.")
+      }
+      );
   };
   return (
     <div id='contact' className='lg:h-screen lg:w-screen bg-[#e4e4e7] lg:p-32 p-6 flex lg:flex-row flex-col w-96'>
@@ -49,13 +48,14 @@ function Contact() {
         <div className='lg:ml-32 ml-12'>
 <div className='   mt-5'>
   <input type="text" placeholder='Your Name' className='bg-white py-2 lg:px-6 px-3  rounded-xl shadow-2xl' 
-  
+  value={name}
+  onChange={(e) => setName(e.target.value)} 
   />  
 </div>
 <div className=''>
   <input type="Email" placeholder='Your Email' className='bg-white py-2 lg:px-6 px-3 rounded-xl shadow-2xl mt-8'
-  value={recipient}
-  onChange={(e) => setRecipient(e.target.value)}
+  value={email}
+  onChange={(e) => setEmail(e.target.value)}
   />  
 </div>
 <div className=''>
