@@ -62,7 +62,7 @@ function showNavbar(){
              className="block text-white hover:text-gray-100 focus:text-gray-100 focus:outline-none"
              >
               {isOpen ? (<div className='bg-white w-96 rounded-l-xl'>
-                   <div id='navbar' className={`md:flex lg:flex-row  lg:justify-center lg:ml-60  `}>
+                   <div id='navbar' className={`md:flex lg:flex-row  lg:justify-center lg:ml-60 mr-28  `}>
                    <IoMdClose className=' text-2xl mt-5  lg:hidden ml-[200px] text-[#3f3f46] '></IoMdClose>
                    <div className='p-5'>
    <a  href="#home" className=' font-bold lg:text-xl text-[#3f3f46] '  >Home</a>
@@ -79,11 +79,11 @@ function showNavbar(){
                    <div className='p-5'>
    <a href="#services" className=' font-bold lg:text-xl text-[#3f3f46]'>Services</a>
                    </div>
-                   <div className='pl-5 py-5 flex flex-row lg;ml-40 xl:ml-40 ml-32  '>
-                     <AiFillLinkedin className=' lg:text-2xl text-xl text-[#5b21b6]' />
+                   <div className='pl-5 py-5 flex flex-row lg;ml-40 xl:ml-40    '>
+                     <AiFillLinkedin className=' lg:text-2xl text-xl text-[#5b21b6] ml-16' />
    <a href="https://www.linkedin.com/in/anelka-donga-289b8122a/" className=' font-bold lg:text-xl ml-2 cursor-pointer text-[#3f3f46]'>LinkdIn</a>
                    </div>
-                   <div className='pl-5 py-5 flex flex-row ml-32'>
+                   <div className='pl-5 py-5 flex flex-row ml-16'>
                    <BsGithub className=' lg:text-2xl text-xl text-[#5b21b6]'/>
    <a href="https://github.com/Kanel04" className=' font-bold lg:text-xl ml-2 cursor-pointer text-[#3f3f46]'> GitHuB</a>
                    </div>
