@@ -1,12 +1,15 @@
-import React , {useState} from 'react'
+import React , {useState , useEffect} from 'react'
 import { BsGithub } from 'react-icons/bs';
 import { AiFillLinkedin } from 'react-icons/ai';
 import Anelka from '../assets/anelka-r.png';
 import {FaBars} from 'react-icons/fa';
 import {IoMdClose} from 'react-icons/io';
-import {motion} from 'framer-motion'
-
+import {motion} from 'framer-motion';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function Navbar() {
+
+  
   
 const [show , setshow]= useState(false);
 const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +21,16 @@ function showNavbar(){
   nav.classList.remove("hidden");
   ClassList.add("bg-white h-96 w-96");
 } 
+useEffect(() => {
+  AOS.init({
+    duration: 3000,
+    delay: 200,
+    easing: 'ease-in-out',
+    once: true
+  });
+}, []);
+
+
 
 
 
@@ -26,7 +39,7 @@ function showNavbar(){
     <div>
          <div>
             <div id='home' className='flex flex-col    lg:w-full w-96   lg:h-screen  '>
-              <div className="flex flex-row lg:w-full lg:h-16 lg:w-full w-96 shadow-lg fixed  bg-white h-16 ">              
+              <div className="flex flex-row lg:w-full lg:h-16 lg:w-full w-96 shadow-lg fixed opacity-100 z-10  bg-white h-16 ">              
                  <div className='p-5'>
                 <a href="#home" className='flex flex-row lg:text-3xl text-xl font-bold text-[#3f3f46] '><p className='font-bold text-[#5b21b6] lg:text-3xl text-xl '>P</p>ortfolio.</a>
                 </div>
@@ -97,17 +110,29 @@ function showNavbar(){
 
              </button>
                               </div>
-            <div className='flex lg:flex-row flex-col justify-center m-5 w-96 lg:w-full'>
             <div 
-     
+           
+            className='flex lg:flex-row flex-col justify-center m-5 w-96 lg:w-full '>
+            <div 
+     data-aos="fade-up"
+     data-aos-duration="1000"
             className='bg-[#5b21b6] lg:w-96 lg:h-96 w-60 h-60  lg:mt-24 mt-32 ml-28 mt-24 rounded-full shadow-xl '>
                   <p className='lg:text-9xl text-4xl font-bold  text-white text-center lg:mt-24 mt-24  ml-14 flex flex-row  '>I'm <p className='text-white font-bold lg:text-5xl lg:mt-20 lg:ml-24 mt-1 ml-2 text-3xl '>a</p> </p>
             </div>
             <div className='lg:mt-40  '>
-              <p className='flex flex-row font-bold lg:text-5xl text-4xl bg-black lg:w-80 lg:h-80 w-60 h-60  rounded-full py-24 text-white mt-5'>
-                <p className='text-[#5b21b6] font-bold lg:text-5xl text-4xl ml-6'>F</p>ullstack <p className='text-[#5b21b6] lg:ml-12 md:ml-6 font-bold lg:text-5xl text-4xl flex flex-row mt-8'><p className='text-white font-bold lg:text-5xl text-4xl ml-1'>D</p><p className='text-white lg:text-[#5b21b6]'>e</p>veloper</p></p>
+              <p className='flex flex-row font-bold lg:text-5xl text-4xl bg-black lg:w-80 lg:h-80 w-60 h-60  rounded-full py-24 text-white mt-5'
+              data-aos="fade-up"
+              data-aos-duration="3000"
+              >
+                <p className='text-[#5b21b6] font-bold lg:text-5xl text-4xl ml-6'>F</p>ullstack <p className='text-[#5b21b6] lg:ml-12 md:ml-6 font-bold lg:text-5xl text-4xl flex flex-row mt-8'
+                 data-aos="fade-up"
+                 data-aos-duration="4000"
+                ><p className='text-white font-bold lg:text-5xl text-4xl ml-1'>D</p><p className='text-white lg:text-[#5b21b6]'>e</p>veloper</p></p>
             </div>
-            <div className="lg:ml-24">
+            <div className="lg:ml-24"
+            data-aos="fade-up"
+            data-aos-duration="5000"
+            >
               <img src={Anelka} alt="photo" />
             </div>
             </div>

@@ -1,4 +1,4 @@
-import React , {useState} from 'react'
+import React , {useState , useEffect} from 'react'
 import {FaFacebook} from 'react-icons/fa'
 import {BsInstagram} from 'react-icons/bs'
 import {BsTwitter} from 'react-icons/bs'
@@ -6,8 +6,20 @@ import {AiOutlineMail} from 'react-icons/ai'
 import {FiPhoneCall} from 'react-icons/fi'
 import axios from "axios";
 import  toast  from 'react-hot-toast';
-import {BASE_URL} from '../../../../constant/index'
+import {BASE_URL} from '../../../../constant/index';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function Contact() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 3000,
+      delay: 200,
+      easing: 'ease-in-out',
+      once: true
+    });
+  }, []);
+  
 
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
@@ -28,7 +40,10 @@ function Contact() {
   };
   return (
     <div id='contact' className='lg:h-screen lg:w-screen bg-[#e4e4e7] lg:p-32 p-6 flex lg:flex-row flex-col w-96'>
-       <div className='shadow-2xl lg:mt-4 mt-14 lg:w-80 lg:h-96 w-60 p-2 h-60 lg:ml-60 ml-12 bg-white rounded-xl  '>
+       <div 
+       data-aos="fade-right"
+       data-aos-duration="1000"
+       className='shadow-2xl lg:mt-4 mt-14 lg:w-80 lg:h-96 w-60 p-2 h-60 lg:ml-60 ml-12 bg-white rounded-xl  '>
         <h1 className='lg:text-3xl text-xl font-bold lg:py-8 py-4 ml-14 text-[#3f3f46] '>Contact me</h1>
         <div>
           <a href="#" className='flex flex-row lg:ml-5 ml-2 lg:text-2xl text-lg font-bold lg:mt-10 mt-2 text-[#3f3f46]'><FiPhoneCall className='mr-5 font-bold'></FiPhoneCall> +261 32 57 390 58</a>
@@ -44,7 +59,10 @@ function Contact() {
         </div>
 
        </div>
-       <form onSubmit={handleSubmit}>      
+       <form 
+        data-aos="fade-left"
+        data-aos-duration="1000"
+       onSubmit={handleSubmit}>      
         <div className='lg:ml-32 ml-12'>
 <div className='   mt-5'>
   <input type="text" placeholder='Your Name' className='bg-white py-2 lg:px-6 px-3  rounded-xl shadow-2xl' 

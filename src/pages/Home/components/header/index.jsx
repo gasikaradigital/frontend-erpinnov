@@ -1,8 +1,20 @@
-import React , {useState} from 'react'
+import React , {useState , useEffect} from 'react'
 import {MdPlace} from 'react-icons/md'
 import Anelka from '../assets/figure.jpg'
-import CV from '../document/cv-Anelka.pdf'
+import CV from '../document/cv-Anelka.pdf';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 function Header() {   
+  
+  useEffect(() => {
+    AOS.init({
+      duration: 3000,
+      delay: 200,
+      easing: 'ease-in-out',
+      once: true
+    });
+  }, []);
+  
   
   const [loading, setLoading] = useState(false);
 
@@ -29,7 +41,10 @@ function Header() {
   return (
     <div id='about' className='flex justify-center lg:h-screen bg-[#ede9fe] lg:py-8 py-5 lg:w-screen  w-96'>
       
-      <div className='flex lg:flex-row flex-col bg-white shadow-xl rounded-xl  lg:ml-20 lg:mt-20 mt-16 lg:mr-20  '>
+      <div className='flex lg:flex-row flex-col bg-white shadow-xl rounded-xl  lg:ml-20 lg:mt-20 mt-16 lg:mr-20  '
+       data-aos="fade-up"
+       data-aos-duration="1000"
+      >
         <div className='lg:w-96 lg:h-full  overflow-hidden bg-no-repeat bg-cover hover:rounded-l-xl  '>
         <img src={Anelka} alt="AnelkaPhoto" className='lg:w-96 lg:h-full h-80 w-80 lg:rounded-l-xl rounded-t-xl  hover:scale-110 transition duration-300 ease-in-out hover:rounded-l-xl ' />
         </div>
