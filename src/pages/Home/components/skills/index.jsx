@@ -106,7 +106,7 @@ function Skills
       <div className=''></div>
       </div>
       <div className='flex flex-row p-1 '>
-      <p className='text-lg font-bold  ml-5 text-[#3f3f46]'>Java</p>
+      <p className='text-lg font-bold  ml-5 text-[#3f3f46]'>Nextjs</p>
       <div className=''></div>
       </div>
       <div className='flex flex-row p-1 '>
@@ -114,7 +114,7 @@ function Skills
       <div className=''></div>
       </div>
       <div className='flex flex-row p-1 '>
-      <p className='text-lg font-bold  ml-5 text-[#3f3f46]'>Express</p>
+      <p className='text-lg font-bold  ml-5 text-[#3f3f46]'>Java</p>
       <div className=''></div>
       </div>
       <div className='flex flex-row p-1 '>
@@ -137,6 +137,24 @@ function Skills
       <div className=''></div>
       </div>
     </div>
+    <h1
+    data-aos="zoom-in"
+    data-aos-duration="4500"
+    className='text-2xl font-bold pl-14 ml-4 mt-5 lg:mt-28 text-[#3f3f46]'>Data base</h1>
+    <div 
+    data-aos="zoom-in"
+    data-aos-duration="5000"
+    className='lg:w-96 w-80 h-32 rounded-2xl shadow-2xl lg:ml-14 mt-5 bg-white p-6 '>
+      <div className='flex flex-col  '>
+      <p className='text-lg font-bold  ml-6 text-[#3f3f46]'>Mongodb</p>
+      <div className=''></div>
+      <p className='text-lg font-bold mt-4  ml-6 text-[#3f3f46]'>Mysql</p>
+      <div className=''></div>
+      </div>
+    </div>
+    </div>
+    <div >
+
     </div>
   </div>
  </div>

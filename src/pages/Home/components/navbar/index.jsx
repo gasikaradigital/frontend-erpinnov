@@ -7,6 +7,7 @@ import {IoMdClose} from 'react-icons/io';
 import {motion} from 'framer-motion';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Typed from 'react-typed';
 function Navbar() {
 
   
@@ -120,16 +121,22 @@ useEffect(() => {
                   <p className='lg:text-9xl text-4xl font-bold  text-white text-center lg:mt-24 mt-24  ml-14 flex flex-row  '>I'm <p className='text-white font-bold lg:text-5xl lg:mt-20 lg:ml-24 mt-1 ml-2 text-3xl '>a</p> </p>
             </div>
             <div className='lg:mt-40  '>
-              <p className='flex flex-row font-bold lg:text-5xl text-4xl bg-black lg:w-80 lg:h-80 w-60 h-60  rounded-full py-24 text-white mt-5'
+              <p className='flex flex-row font-bold lg:text-5xl text-4xl bg-black lg:w-80 lg:h-80 w-60 h-60  rounded-full py-24 px-4 text-white mt-5'
               data-aos="fade-up"
               data-aos-duration="3000"
               >
-                <p className='text-[#5b21b6] font-bold lg:text-5xl text-4xl ml-6'>F</p>ullstack <p className='text-[#5b21b6] lg:ml-12 md:ml-6 font-bold lg:text-5xl text-4xl flex flex-row mt-8'
+                <p ><Typed strings={[
+              'Fullstack Developer',
+              'UX\UI Designer',  
+              ]} typeSpeed={80} className='text-white font-bold lg:text-5xl text-center text-4xl p-10 ml-6' 
+              backSpeed={90}
+              loop
+              ></Typed></p> <p className='text-[#5b21b6] lg:ml-12 md:ml-6 font-bold lg:text-5xl text-4xl flex flex-row mt-8'
                  data-aos="fade-up"
                  data-aos-duration="4000"
-                ><p className='text-white font-bold lg:text-5xl text-4xl ml-1'>D</p><p className='text-white lg:text-[#5b21b6]'>e</p>veloper</p></p>
+                ></p></p>
             </div>
-            <div className="lg:ml-24"
+            <div className=""
             data-aos="fade-up"
             data-aos-duration="5000"
             >
