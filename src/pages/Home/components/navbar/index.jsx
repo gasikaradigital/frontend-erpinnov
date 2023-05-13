@@ -8,6 +8,7 @@ import {motion} from 'framer-motion';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Typed from 'react-typed';
+import "./font.css"
 function Navbar() {
 
   
@@ -38,6 +39,7 @@ useEffect(() => {
 
   return (
     <div>
+
          <div>
             <div id='home' className='flex flex-col    lg:w-full w-96   lg:h-screen  '>
               <div className="flex flex-row lg:w-full lg:h-16 lg:w-full w-96 shadow-lg fixed opacity-100 z-10  bg-white h-16 ">              
@@ -118,7 +120,7 @@ useEffect(() => {
      data-aos="fade-up"
      data-aos-duration="1000"
             className='bg-[#5b21b6] lg:w-96 lg:h-96 w-60 h-60  lg:mt-24 mt-32 ml-28 mt-24 rounded-full shadow-xl '>
-                  <p className='lg:text-9xl text-4xl font-bold  text-white text-center lg:mt-24 mt-24  ml-14 flex flex-row  '>I'm <p className='text-white font-bold lg:text-5xl lg:mt-20 lg:ml-24 mt-1 ml-2 text-3xl '>a</p> </p>
+                  <p className='lg:text-9xl text-4xl font-[Kantolista]  text-white text-center lg:mt-24 mt-24  ml-14 flex flex-row  '>I'm <p className='text-white font-bold lg:text-5xl lg:mt-20 lg:ml-24 mt-1 ml-2 text-3xl '>a</p> </p>
             </div>
             <div className='lg:mt-40  '>
               <p className='flex flex-row font-bold lg:text-5xl text-4xl bg-black lg:w-80 lg:h-80 w-60 h-60  rounded-full py-24 px-4 text-white mt-5'
@@ -128,7 +130,7 @@ useEffect(() => {
                 <p ><Typed strings={[
               'Fullstack Developer',
               'UX\UI Designer',  
-              ]} typeSpeed={80} className='text-white font-bold lg:text-5xl text-center text-4xl p-10 ml-6' 
+              ]} typeSpeed={80} className='text-white font-[Kantolista] text-center lg:text-5xl text-center text-4xl p-10 ml-6' 
               backSpeed={90}
               loop
               ></Typed></p> <p className='text-[#5b21b6] lg:ml-12 md:ml-6 font-bold lg:text-5xl text-4xl flex flex-row mt-8'
