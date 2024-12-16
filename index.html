@@ -2,9 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src/pages/Home/components/assets/code.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JAOSOA Donga Anelka</title>
+    <link rel="icon" type="image/svg+xml" href="src/assets/erp.png">
+    <title>ERP INNOV</title>
+    <script>
+      let dots = '';
+      const updateTitle = () => {
+        if (document.readyState !== 'complete') {
+          dots = dots.length < 3 ? dots + '.' : '';
+          document.title = `Chargement en cours${dots}`;
+        } else {
+          document.title = 'ERP INNOV';
+          clearInterval(titleInterval);
+        }
+      };
+      
+      const titleInterval = setInterval(updateTitle, 500);
+      
+      document.addEventListener('readystatechange', () => {
+        if (document.readyState === 'complete') {
+          document.title = 'ERP INNOV';
+          clearInterval(titleInterval);
+        }
+      });
+    </script>
   </head>
   <body>
     <div id="root"></div>
